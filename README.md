@@ -86,17 +86,9 @@ unzip -p iPhone2,1_4.3.5_8L1_Restore.ipsw Firmware/dfu/iBSS.n88ap.RELEASE.dfu > 
 
 ## Coming soon!
 
-* Reorganize and refactor code.
-
-* Easier setup: remove requirement to patch libusb, download iBSS automatically using partial zip.
-
-* Pwned DFU Mode exploit for S5L8720/S5L8922/S5L8930 devices compatible with Yosemite, El Capitan, and Sierra.
-
 * Dump SecureROM on S5L8720/S5L8922/S5L8930 devices.
 
 * Install custom boot logos on devices jailbroken with 24Kpwn and alloc8.
-
-* Enable verbose boot on devices jailbroken with 24Kpwn and alloc8.
 
 ## Disclaimer
 
@@ -115,3 +107,13 @@ THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
 geohot for limera1n exploit
 
 walac for pyusb
+
+## My contributios
+
+I forked to make this tool a bit better. I will add something Axi0mx doesn't have time to, for example:
+
+- Download iOS 4.3.5 iBSS using PartialZip
+
+- Flash custom NOR with verbose for verbose boot
+
+- A little code clean-up: put everything to one folder (insead of bash script which will run stuff) so the user doesn't get lost, as stated - bash script for easier install / run.
